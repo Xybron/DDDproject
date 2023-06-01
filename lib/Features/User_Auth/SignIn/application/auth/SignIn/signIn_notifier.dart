@@ -1,7 +1,7 @@
 import 'package:cfcproject/Features/auth/domain/auth/auth_failure.dart';
 import 'package:cfcproject/Features/auth/domain/auth/i_auth_facade.dart';
 import 'package:cfcproject/Features/auth/domain/auth/input_objects.dart';
-import 'package:cfcproject/ingection.dart';
+import 'package:cfcproject/injection.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -11,8 +11,8 @@ part 'signIn_event.dart';
 part 'signIn_state.dart';
 part 'signIn_notifier.freezed.dart';
 
-
-final loginProvider = StateNotifierProvider<LoginStateNotifier, SignInFormState>(
+final loginProvider =
+    StateNotifierProvider<LoginStateNotifier, SignInFormState>(
   (ref) => ref.watch(loginStateNotifierProvider),
 );
 
@@ -23,7 +23,6 @@ final loginStateNotifierProvider = Provider<LoginStateNotifier>(
 final authFacadeProvider = Provider<IAuthFacade>(
   (ref) => getIt<IAuthFacade>(),
 );
-
 
 @singleton
 class LoginStateNotifier extends StateNotifier<SignInFormState> {
@@ -39,7 +38,7 @@ class LoginStateNotifier extends StateNotifier<SignInFormState> {
           emailAddress: EmailAddress(e.emailStr),
           authFailureOrSuccessOption: none());
     },
-    
+
         //===========================
         passwordChanged: (e) async* {
       yield state.copyWith(
