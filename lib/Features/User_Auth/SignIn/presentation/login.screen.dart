@@ -6,7 +6,7 @@ import 'package:cfcproject/components/button.widget.dart';
 import 'package:cfcproject/components/text.input.fields.dart';
 import 'package:cfcproject/components/text.widget.dart';
 import 'package:cfcproject/components/utils.dart';
-import 'package:cfcproject/ingection.dart';
+import 'package:cfcproject/injection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

@@ -1,10 +1,11 @@
-
+import 'package:cfcproject/injection.dart';
 import 'package:cfcproject/routes/material.auto.route.gr.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
 void main() {
+  configureDependencies();
   runApp(ProviderScope(child: MyApp()));
 }
 

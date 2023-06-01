@@ -1,11 +1,9 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
-
 import 'package:cfcproject/Features/auth/domain/core/failures.dart';
 import 'package:cfcproject/Features/auth/domain/core/input_objects.dart';
 import 'package:cfcproject/Features/auth/domain/core/input_validators.dart';
 import 'package:dartz/dartz.dart';
-
 
 class EmailAddress extends ValueObject<String> {
   // ignore: annotate_overrides
