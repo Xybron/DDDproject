@@ -1,0 +1,30 @@
+- category: Hearing
+  id: "CF-H"
+  questions:
+    - question: "Who lives in the sand castle under the roof?"
+      answer:
+        options:
+          - Mace
+          - Gwen
+          - Cap
+    - question: "Who lives in the tube up in the night?"
+      answer:
+        options:
+          - Goof
+          - Leins
+          - Deen
+    - question: "Who lives on the moon up in the night?"
+      answer:
+        options:
+          - Zack
+          - Carl
+          - Van
+  observations:
+    - question: "How many roofs did you see?"
+      answer:
+        options:
+          - One
+          - Two
+          - Several
+
+      
