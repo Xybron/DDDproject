@@ -5,6 +5,7 @@ import 'package:cfcproject/Features/Home/presentation/main.screen.dart';
 import 'package:cfcproject/Features/Onboarding/presentation/onboarding,screen.dart';
 import 'package:cfcproject/Features/User_Auth/ChangePassword/presentation/change.password.screen.dart';
 import 'package:cfcproject/Features/User_Auth/SignIn/presentation/login.screen.dart';
+import 'package:cfcproject/core/CFC_Screening_Tool/example/cfc_example.screen.dart';
 
 @MaterialAutoRouter(
   replaceInRouteName: 'Screen,Route',
@@ -16,6 +17,7 @@ import 'package:cfcproject/Features/User_Auth/SignIn/presentation/login.screen.d
     AutoRoute(page: HomeScreen),
     AutoRoute(page: LoginScreen),
     AutoRoute(page: ChangePasswordScreen),
+    AutoRoute(page: ExampleCFCScreen),
   ],
 )
 class $AppRouter {}
