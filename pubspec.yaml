@@ -77,7 +77,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
-    - assets/CFC_Screening_Tool
+    - assets/CFC_Screening_Tool/screening_tool.config.yaml
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

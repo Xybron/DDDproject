@@ -9,16 +9,21 @@ class CFCScreeningTool {
 
   CFCScreeningTool({this.screeningSet});
 
-  get responses {
-    if (screeningSet == null) {
-      throw "Cannot get responses yet as at least a screeningSet is needed.";
-    }
-    return screeningSet!.map((category) => category.responses).toList();
-  }
+  get responses => () {
+        if (screeningSet == null) {
+          throw "Cannot get responses yet as at least a screeningSet is needed.";
+        }
+        return screeningSet!.map((screening) {
+          return screening.responses();
+        }).toList();
+      };
 
   Future<List<CFCScreeningModel>> generateCFCQuestionsFromFile() async {
     // Read the YAML file
-    final yamlString = await rootBundle.loadString('assets/screening.yaml');
+    final yamlString = await rootBundle
+        .loadString('assets/CFC_Screening_Tool/screening_tool.config.yaml');
+
+    if (yamlString.isEmpty) throw 'Could not load screening tool config file.';
 
     // Parse the YAML string
     final yamlMap = loadYaml(yamlString);

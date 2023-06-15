@@ -27,18 +27,21 @@ class CFCScreeningModel {
 
     return CFCScreeningModel(
       id: json['id'],
-      category: CFCCategories.Hearing,
+      category: CFCCategories.values.firstWhere((category) =>
+          category.toString() == 'CFCCategories.${json['category']}'),
       questions: parsedQuestions,
       observations: parsedObservations,
     );
   }
 
-  get responses => {
-        "category": category,
-        "cf_questions":
-            questions.map((question) => question.answer.getAnswer).toList(),
-        "observations": observations
-            ?.map((observation) => observation.answer.getAnswer)
-            .toList(),
+  get responses => () {
+        return {
+          "category": category,
+          "cf_questions":
+              questions.map((question) => question.answer.getAnswer()).toList(),
+          "observations": observations
+              ?.map((observation) => observation.answer.getAnswer())
+              .toList(),
+        };
       };
 }

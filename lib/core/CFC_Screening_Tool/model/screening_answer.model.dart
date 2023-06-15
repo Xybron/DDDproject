@@ -11,10 +11,9 @@ class CFCScreeningAnswer {
   }
 
   selectAnswer(int index) {
-    print(index);
     // Check if selection index is in range
     if (index > options.length) {
-      print("answer slection range out of bounds.");
+      print("answer selection range out of bounds.");
       return;
     }
 
@@ -22,13 +21,15 @@ class CFCScreeningAnswer {
     _selectedAnswerIndex = index;
   }
 
-  get getAnswer {
-    if (_selectedAnswerIndex == null)
-      return print("Undefined answer selection index");
+  get getAnswer => () {
+        if (_selectedAnswerIndex == null) {
+          print("Undefined answer selection index");
+          return null;
+        }
 
-    return {
-      "index": _selectedAnswerIndex,
-      "text": options[_selectedAnswerIndex!]
-    };
-  }
+        return {
+          "index": _selectedAnswerIndex,
+          "text": options[_selectedAnswerIndex!]
+        };
+      };
 }

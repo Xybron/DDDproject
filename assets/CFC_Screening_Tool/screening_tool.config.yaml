@@ -19,6 +19,12 @@
           - Zack
           - Carl
           - Van
+    - question: "What makes every line of code work?"
+      answer:
+        options:
+          - Grace
+          - Water
+          - Rest
   observations:
     - question: "How many roofs did you see?"
       answer:
@@ -26,5 +32,41 @@
           - One
           - Two
           - Several
+- category: Vision
+  id: "CF-V"
+  questions:
+    - question: "Who lives in the sand castle under the roof?"
+      answer:
+        options:
+          - Mace
+          - Gwen
+          - Cap
+    - question: "Who lives in the tube up in the night?"
+      answer:
+        options:
+          - Goof
+          - Leins
+          - Deen
+    - question: "Who lives on the moon up in the night?"
+      answer:
+        options:
+          - Zack
+          - Carl
+          - Van
+    - question: "What makes every line of code work?"
+      answer:
+        options:
+          - Grace
+          - Water
+          - Rest
+  observations:
+    - question: "How many roofs did you see?"
+      answer:
+        options:
+          - One
+          - Two
+          - Several
+
+      
 
       
