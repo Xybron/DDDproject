@@ -1,6 +1,6 @@
 class CFCScreeningAnswer {
   List<String> options;
-  int? _selectedAnswerIndex;
+  int? selectedAnswerIndex;
 
   CFCScreeningAnswer({required this.options});
 
@@ -18,18 +18,18 @@ class CFCScreeningAnswer {
     }
 
     // Update the selected answer index with the current index
-    _selectedAnswerIndex = index;
+    selectedAnswerIndex = index;
   }
 
   get getAnswer => () {
-        if (_selectedAnswerIndex == null) {
+        if (selectedAnswerIndex == null) {
           print("Undefined answer selection index");
           return null;
         }
 
         return {
-          "index": _selectedAnswerIndex,
-          "text": options[_selectedAnswerIndex!]
+          "index": selectedAnswerIndex,
+          "value": options[selectedAnswerIndex!]
         };
       };
 }

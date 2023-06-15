@@ -35,30 +35,30 @@
 - category: Vision
   id: "CF-V"
   questions:
-    - question: "Who lives in the sand castle under the roof?"
+    - question: "When was Tesla built?"
       answer:
         options:
-          - Mace
-          - Gwen
-          - Cap
-    - question: "Who lives in the tube up in the night?"
+          - '1'
+          - '45'
+          - '456'
+    - question: "How many presidents does Ghana have?"
       answer:
         options:
-          - Goof
-          - Leins
-          - Deen
-    - question: "Who lives on the moon up in the night?"
+          - One
+          - Two
+          - Thirty Five
+    - question: "Who owns the state?"
       answer:
         options:
-          - Zack
-          - Carl
-          - Van
-    - question: "What makes every line of code work?"
+          - France
+          - UK
+          - Iraq
+    - question: "What makes you tick?"
       answer:
         options:
           - Grace
-          - Water
-          - Rest
+          - Life
+          - Stress
   observations:
     - question: "How many roofs did you see?"
       answer:
